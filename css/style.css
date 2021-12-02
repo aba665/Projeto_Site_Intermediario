@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-image: url("/image/nas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    color: white;
+
+}
+h1{
+    margin-left: 40px;
+}
+header{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+ul{
+    margin-right: 120px;
+    
+}
+nav ul li {
+    width: 65%;
+
+    display: inline;
+    font: italic;
+    font-weight: 500;
+    font-size: 18px;
+    
+  
+}
+ul li{
+    list-style: none;
+    padding: 7px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a.ativo ,a:hover{
+    border-bottom: 4px solid white;
+}
+#conteudo{
+    
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 100px 70px 0 70px;
+}
+section{
+     width: 50%;
+     height: 70%;
+    
+     
+}
+article{
+    font-size: 28px;
+    font: italic;
+    font-weight: 400;
+    display: flex;
+    width: 260px;
+    height: 60%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #000000bb;
+}
+#txtcima{
+    font-weight: 400;
+    font: italic;
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#txtmeio{
+    font-weight: 500;
+    font: italic;
+    font-size: 120px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#txtbaixo{
+    margin: auto;
+    width: 60%;
+    font-weight: 100;
+    font: italic;
+    font-size: 22px;
+    text-align: center;
+}
