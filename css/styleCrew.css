@@ -5,7 +5,7 @@
 }
 body{
     width: 100%;
-    background-image: url("/image/nas.jpg");
+    background-image: url("/image/byspace.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-repeat: repeat-y;
@@ -52,52 +52,67 @@ a:focus ,a:hover{
     border-bottom: 4px solid white;
 }
 #conteudo{
-    
-    height: 400px;
+    width: 100%;
+    height: 60vh;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 100px 70px 0 70px;
+
 }
-section{
-     width: 50%;
-     height: 70%;
-    
-     
-}
-article{
-    font-size: 28px;
-    font: italic;
-    font-weight: 400;
+aside{
+    width: 50%;
     display: flex;
-    width: 260px;
-    height: 60%;
-    background-color: #ffffff;
-    border-radius: 50%;
     justify-content: center;
-    align-items: center;
-    color: #000000bb;
-    margin-right: 60px;
+    align-items: flex-end;
 }
-#txtcima{
-    font-weight: 400;
+#textolado{
+    
+    margin: 130px 20px 0 20px;
+    width: 60%;
+    height: 70%;
+    
+}
+#Txtprimary{
+    color: white;
     font: italic;
-    font-size: 27px;
-    text-align: center;
-    margin-bottom: 5px;
-}
-#txtmeio{
     font-weight: 500;
-    font: italic;
-    font-size: 120px;
-    text-align: center;
-    margin-bottom: 5px;
+    font-size: 22px;
+    margin: 50px 0 0 150px;
+    letter-spacing: 4px;
 }
-#txtbaixo{
+#profisao{
+    font: italic;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+#nome{
+    font: italic;
+    font-weight: 600;
+    font-size: 35px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+#texto{
+    font: italic;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 80px;
+    
+}
+#article2{
     margin: auto;
     width: 60%;
-    font-weight: 100;
-    font: italic;
-    font-size: 22px;
-    text-align: center;
+    display: flex;
+   
+}
+.selecionadores{
+    margin: 30px 8px 0 8px;
+    padding: 5px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: gray;
+}
+.selecionadores.ativo, .selecionadores:hover{
+    background-color: white;
+    cursor: pointer;
 }
