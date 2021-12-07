@@ -5,7 +5,7 @@
 }
 body{
     width: 100%;
-    background-image: url("../image/byspace.jpg");
+    background-image: url("../image/nas.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-repeat: repeat-y;
@@ -25,7 +25,8 @@ header{
 }
 ul{
     margin-right: 120px;
-    
+    overflow: hidden;
+    transition: all 2s;
 }
 nav ul li {
     width: 65%;
@@ -68,7 +69,7 @@ aside{
     margin: 130px 20px 0 20px;
     width: 60%;
     height: 70%;
-    
+    order: -1;
 }
 #Txtprimary{
     color: white;
@@ -108,11 +109,97 @@ aside{
 .selecionadores{
     margin: 30px 8px 0 8px;
     padding: 5px;
-    width: 16px;
+    width: 20px;
+    border: 2px solid white;
     border-radius: 50%;
     background-color: gray;
 }
 .selecionadores.ativo, .selecionadores:hover{
     background-color: white;
     cursor: pointer;
+}
+button{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    font-size: 20px;
+    display: none;
+}
+button:hover{
+    cursor: pointer;
+}
+button:focus ~ nav ul{
+    height: 141px;
+}
+@media(max-width: 1024px){
+    header{
+        flex-direction: column;
+        align-items: unset;
+    }
+    nav ul li{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    ul{
+        margin: auto;
+        width: 100%;
+        height: 0;
+    }
+    button{
+        display: block;
+    }
+    section{
+        width: 100%;
+        display: inline-block;
+    }
+    #conteudo{
+        width: 100%;
+        margin: auto;
+        display: block;
+        height: 70vh;
+    }
+    #textolado{
+        width: 80%;
+        margin: 20px auto;
+    }
+    #profisao{
+        font-size: 14px;
+        margin: 0;
+    }
+    #nome{
+        font-size: 20px;
+        margin: 0;
+    }
+    #texto{
+        width: 90%;
+        font-size: 16px;
+        margin: 0;
+    }
+    #aside{
+        display: inline-block;
+        width: 100%;
+        margin: auto;
+
+    }
+    #picture{
+      width: 100%;
+      display: inline-block;
+      margin-left: 80%;
+       
+    }
+    #Txtprimary{
+        display: inline-block;
+        margin: 20px 20px;
+        font-size: 14px;
+    }
+    #article2{
+        margin: auto;
+        width: 30%;
+        display: flex;
+       
+    }
 }

@@ -25,6 +25,8 @@ header{
 }
 ul{
     margin-right: 120px;
+    overflow: hidden;
+    transition: all 2s;
     
 }
 nav ul li {
@@ -101,3 +103,91 @@ article{
     font-size: 22px;
     text-align: center;
 }
+#exp:hover{
+    cursor: pointer;
+}
+button{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+   font-size: 20px;
+   display: none;
+}
+button:hover{
+    cursor: pointer;
+}
+button:focus ~ nav ul{
+    height: 141px;
+}
+
+@media(max-width: 1024px){
+    header{
+        flex-direction: column;
+        align-items: unset;
+    }
+    nav ul li{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    ul{
+        margin: auto;
+        width: 100%;
+        height: 0;
+    }
+    button{
+        display: block;
+    }
+    body{
+        width: 100%;
+        background-size: cover;
+    }
+    #conteudo{
+        
+        height: 90vh;
+        display: inline-block;
+        
+    }
+    section{
+         width: 100%;
+         height: 50%;
+      
+         
+    }
+    article{
+        margin: auto;
+        font-size: 18px;
+        font: italic;
+        width: 57%;
+        height: 40%;
+        background-color: #ffffff;
+        border-radius: 50%;
+        color: #000000bb;
+    }
+    #txtcima{
+        font-weight: 400;
+        font: italic;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    #txtmeio{
+        font-weight: 500;
+        font: italic;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    #txtbaixo{
+        margin: auto;
+        width: 100%;
+        font-weight: 100;
+        font: italic;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+

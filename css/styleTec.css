@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-image: url("../image/nas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    color: white;
+
+}
+h1{
+    margin-left: 40px;
+}
+header{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+ul{
+    margin-right: 120px;
+    overflow: hidden;
+    transition: all 2.5s;
+}
+nav ul li {
+    width: 65%;
+    display: inline;
+    font: italic;
+    font-weight: 500;
+    font-size: 18px;
+}
+ul li{
+    list-style: none;
+    padding: 7px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:focus ,a:hover{
+    border-bottom: 4px solid white;
+}
+#container{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-column-gap: 100px;
+    grid-template-rows: auto;
+}
+.a1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    line-height: 6rem;
+}
+.a3{
+    display: flex;
+    justify-content: flex-end;
+}
+.selecionadores{
+    background-color: transparent;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.selecionadores:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+   
+    
+}
+.p1{
+    font-size: 22px;
+}
+#txtinicio{
+    margin: 1rem 1rem 0.5rem 1rem;
+    font: italic;
+    font-weight: 300;
+    font-size: 20px;
+
+}
+#txtmeio{
+    margin: 1rem 1rem 0.5rem 1rem;
+    font: italic;
+    font-weight: 300;
+    font-size: 30px;
+}
+#txt{
+    margin: 1rem 1rem 0.5rem 1rem;
+    font: italic;
+    font-weight: 400;
+    font-size: 19px;
+}
+#Txtprimary{
+    color: white;
+    font: italic;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 50px 0 0 150px;
+    letter-spacing: 4px;
+}
+#numero{
+    color: rgb(112, 111, 112);
+}
+button{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+   font-size: 20px;
+   display: none;
+}
+button:hover{
+    cursor: pointer;
+}
+button:focus ~ nav ul{
+    height: 141px;
+}
+@media(min-width: 640px) and (max-width: 1024px){
+    .a1{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        line-height: 4rem !important;
+        margin: 200px 0 110px 0;
+    }
+    .selecionadores{
+        background-color: transparent;
+        width: 4rem !important;
+        height: 4rem !important;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+} 
+@media(max-width: 1024px){
+    header{
+        flex-direction: column;
+        align-items: unset;
+    }
+    nav ul li{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    ul{
+        margin: auto;
+        width: 100%;
+        height: 0;
+    }
+    button{
+        display: block;
+    }
+    body{
+        height: 100vh;
+    }
+    #container{
+        height: 100vh;
+    }
+    section{
+        margin: 50px 0;
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+    }
+    .art{
+       width: 80%;
+       margin: auto;
+    }
+    .a1{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        line-height: 2rem;
+        margin: 200px 0 110px 0;
+    }
+    .selecionadores{
+        background-color: transparent;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+    #Txtprimary{
+        display: inline-block;
+        width: 100%;
+        margin: 20px 0;
+        padding: 2px;
+    }
+    #txtinicio{
+        font-size: 18px;
+    }
+    #txtmeio{
+        font-size: 20px;
+    }
+    #txt{
+        font-size: 16px;
+    }
+    .a3{
+        display: flex;
+        justify-content: center;
+    }
+}
+

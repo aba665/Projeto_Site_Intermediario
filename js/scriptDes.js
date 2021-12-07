@@ -15,25 +15,26 @@ var collectionPlanets = [
     {nome: "EUROPA", sobre: "Europa é uma lua de Júpiter de aspecto estranho com um grande número de formações que se entrecruzam. É diferente de Calisto e de Ganímedes com as suas crustas cheias de crateras. Europa quase não tem crateras tal como quase não tem relevo vertical.", distancia: "3121,6 km", tempo: "Sem informação", src: "../image/lua europa.png"},
     {nome: "TITÃ", sobre: "Titã é o maior satélite natural de Saturno e o segundo maior de todo o Sistema Solar, atrás apenas de Ganímedes de Júpiter. É o único satélite que possui uma atmosfera densa e o único objeto estelar além da Terra onde já foram encontradas evidências concretas da existência de corpos líquidos estáveis na superfície. Ele foi descoberto em 1655 pelo astrônomo Christiaan Huygens, o primeiro satélite natural de Saturno descoberto e o sexto do Sistema Solar.", distancia: "1,2 milhão de quilômetros", tempo: "Sem informação", src: "../image/titan.png"}
 ]
+
 loaderPagina(indexPagina)
 function planeta1(){
         indexPagina = 0
         loaderPagina(indexPagina)
-        imagem.style.width = "500px"
+        imagem.style.width = "60vh"
 }
 function planeta2(){
     indexPagina = 1
     loaderPagina(indexPagina)
-    imagem.style.width = "800px"
+    imagem.style.width = "70vh"
 }
 function planeta3(){
     indexPagina = 2
     loaderPagina(indexPagina)
-    imagem.style.width = "400px"
+    imagem.style.width = "50vh"
 }function planeta4(){
     indexPagina = 3
     loaderPagina(indexPagina)
-    imagem.style.width = "350px"
+    imagem.style.width = "45vh"
 }
 
 function loaderPagina(index){
