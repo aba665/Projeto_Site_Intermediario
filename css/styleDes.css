@@ -163,7 +163,7 @@ button:focus ~ nav ul{
     #planeta{
         display: block;
         margin: auto;
-        width: 60vh;
+        width: 45vh;
     }
     #conteudo{
         width: 90%;

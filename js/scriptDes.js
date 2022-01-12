@@ -20,21 +20,21 @@ loaderPagina(indexPagina)
 function planeta1(){
         indexPagina = 0
         loaderPagina(indexPagina)
-        imagem.style.width = "60vh"
+        imagem.style.width = "45vh"
 }
 function planeta2(){
     indexPagina = 1
     loaderPagina(indexPagina)
-    imagem.style.width = "70vh"
+    imagem.style.width = "55vh"
 }
 function planeta3(){
     indexPagina = 2
     loaderPagina(indexPagina)
-    imagem.style.width = "50vh"
+    imagem.style.width = "40vh"
 }function planeta4(){
     indexPagina = 3
     loaderPagina(indexPagina)
-    imagem.style.width = "45vh"
+    imagem.style.width = "40vh"
 }
 
 function loaderPagina(index){
